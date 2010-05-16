@@ -13,6 +13,7 @@ License:	artistic_2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/App/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d8540f354b27d904eee56cc473542cbc
+Patch0:		%{name}-locale.patch
 URL:		http://search.cpan.org/dist/App-SVN-Bisect/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -31,6 +32,7 @@ tool. See the POD documentation of that tool, for usage details.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Build.PL \
