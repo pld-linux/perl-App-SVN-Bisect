@@ -21,7 +21,10 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl(IO::All) > 0.38
 BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-Test-Output
+BuildRequires:	perl-Test-Pod
+BuildRequires:	perl-Test-Pod-Coverage
 BuildRequires:	perl-YAML-Syck
+BuildRequires:	subversion
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
