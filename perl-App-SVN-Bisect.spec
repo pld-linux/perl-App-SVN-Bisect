@@ -11,7 +11,7 @@ Version:	1.0
 Release:	1
 License:	artistic_2
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/App/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/I/IN/INFINOID/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d8540f354b27d904eee56cc473542cbc
 Patch0:		%{name}-locale.patch
 URL:		http://search.cpan.org/dist/App-SVN-Bisect/
@@ -58,6 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README TODO
 %attr(755,root,root) %{_bindir}/svn-bisect
+%dir %{perl_vendorlib}/App/SVN
 %{perl_vendorlib}/App/SVN/*.pm
 %{_mandir}/man3/*
 %{_mandir}/man1/*
