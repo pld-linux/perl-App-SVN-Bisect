@@ -7,12 +7,12 @@
 %define	pnam	SVN-Bisect
 Summary:	App::SVN::Bisect - binary search through svn revisions
 Name:		perl-App-SVN-Bisect
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	artistic_2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/I/IN/INFINOID/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d8540f354b27d904eee56cc473542cbc
+# Source0-md5:	a929a878b7bee04adae2e592770c0ea2
 Patch0:		%{name}-locale.patch
 URL:		http://search.cpan.org/dist/App-SVN-Bisect/
 BuildRequires:	perl-devel >= 1:5.8.0
