@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	App
 %define	pnam	SVN-Bisect
 Summary:	App::SVN::Bisect - binary search through svn revisions
